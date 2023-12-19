@@ -1,0 +1,27 @@
+Bootstrap: docker
+From: ubuntu:20.04
+
+%post
+	ln -snf /usr/share/zoneinfo/Europe/London /etc/localtime
+	echo Europe/London > /etc/timezone
+	apt-get -qq update && apt-get -qq upgrade -y
+	apt-get -qq install -y wget tar locales python3.8 python2.7 openjdk-11-jre-headless libpcre2-dev libgomp1 perl-doc curl
+	ln -s /usr/bin/python3.8 /usr/bin/python3 && ln -s /usr/bin/python3.8 /usr/bin/python
+
+	cd /opt
+
+	wget ftp://ftp.ebi.ac.uk/pub/software/unix/iprscan/5/5.65-97.0/interproscan-5.65-97.0-64-bit.tar.gz
+	tar -pxvzf interproscan-5.65-97.0-64-bit.tar.gz
+	rm interproscan-5.65-97.0-64-bit.tar.gz
+	mv interproscan-5.65-97.0 interproscan
+
+	cd /opt/interproscan
+
+	python3 setup.py interproscan.properties
+
+%environment
+	export PATH=/opt/interproscan:$PATH
+
+%labels
+	Maintener Jérémy Rousseau, MNHN - Paris
+	Version 1.0
