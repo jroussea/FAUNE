@@ -33,7 +33,7 @@ To test the workflow:
 nextflow run main.nf -profile test,singularity
 ```
 
-## Citation
+## Citations
 
 [SeqKit](https://bioinf.shenwei.me/seqkit/):
 * W Shen, S Le, Y Li*, F Hu*. SeqKit: a cross-platform and ultrafast toolkit for FASTA/Q file manipulation. PLOS ONE. doi:10.1371/journal.pone.0163962.
