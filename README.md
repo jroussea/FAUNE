@@ -1,4 +1,4 @@
-# FLORE: Functional and structuraL annOtation of pRotEins
+# FAUNE: Functional And strUcturaL aNntation of protEins
 
 ## Description
 
