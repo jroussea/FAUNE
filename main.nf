@@ -2,7 +2,7 @@
 
 /*
 =============================================================================================
-FLORE: Functional ans structuraL annOtation of pRotEins
+FAUNE: Functional And strUcturaL aNntation of protEins 
 Workflow Nextflow to easily functionally and structurally annotate proteins with interproscan
 =============================================================================================
 */
@@ -13,7 +13,7 @@ nextflow.enable.dsl = 2
 def helpMessage() {
 	log.info ABIHeader()
 	log.info """
-	FLORE: Functional and structuraL annOtation of pRotEins
+	FAUNE: Functional And strUcturaL aNntation of protEins 
 	- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 	Description: Workflow Nextflow to easily functionally and structurally
 				 annotate proteins with interproscan
@@ -87,7 +87,7 @@ workflow {
 
 workflow.onComplete {
 
-	println "- Workflow info: FLORE workflow completed successfully -"
+	println "- Workflow info: FAUNE workflow completed successfully -"
 
 	log.info ABIHeader()
 }
@@ -95,7 +95,7 @@ workflow.onComplete {
 
 workflow.onError = {
 
-    println "- Workflow info: FLORE workflow completed with errors -"
+    println "- Workflow info: FAUNE workflow completed with errors -"
 
 	log.info ABIHeader()
 }
