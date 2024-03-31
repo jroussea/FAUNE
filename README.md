@@ -5,7 +5,7 @@
 FLORE is a nextflow workflow allowing you to carry out a functional and structural annotation of one or more protein sequences present in a fasta file. \
 To do this, it uses [InterProScan5](https://interproscan-docs.readthedocs.io/en/latest/) which allows you to scan several databases such as Pfam, CATH-Gene3D, SUPERFAMILY. \
 FLORE thus makes it possible to obtain information for the sequences. \
-It also allows you to obtain, thanks to [InterProScan5](https://interproscan-docs.readthedocs.io/en/latest/), the GO annotations as soon as they are available.
+It also allows you to obtain, thanks to ![InterProScan5](https://interproscan-docs.readthedocs.io/en/latest/), the GO annotations as soon as they are available.
 
 ## Utilisation
 
